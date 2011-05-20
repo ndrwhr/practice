@@ -1,5 +1,5 @@
 
-Array.prototype.bubblesort = function(){
+Array.implement('bubblesort', function(){
     var length = this.length,
         swap, i;
 
@@ -15,5 +15,5 @@ Array.prototype.bubblesort = function(){
     } while (swap != null);
 
     return this;
-};
+});
 

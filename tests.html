@@ -4,6 +4,18 @@
     <title>practice - tests</title>
 </head>
 <body>
-<script src="bubblesort.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+
+    Array.implement = function(method, callback){
+        Array.prototype[method] = callback;
+    };
+
+    [
+        'bubblesort'
+    ].forEach(function(file){
+        document.writeln('<script type="text/javascript" src="' + file + '.js"><\/script>');
+    });
+
+</script>
 </body>
 </html>

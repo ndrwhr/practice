@@ -1,7 +1,7 @@
 
 Array.implement('insertionsort', function(){
     var length = this.length,
-        swap, i, j;
+        i, j;
 
     for (i = 1; i < length; i++)
         if (this[i - 1] > this[i])

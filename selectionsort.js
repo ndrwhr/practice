@@ -1,7 +1,7 @@
 
 Array.implement('selectionsort', function(){
     var length = this.length,
-        swap, i, j;
+        min, i, j;
 
     for (i = 0; i < length - 1; i++){
         for (min = j = i; j < length; j++)

@@ -10,6 +10,13 @@
         Array.prototype[method] = callback;
     };
 
+    Array.implement('swap', function(i, j){
+        var swap = this[i];
+        this[i] = this[j];
+        this[j] = swap;
+        return this;
+    });
+
     [
         'bubblesort',
         'insertionsort'
